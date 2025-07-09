@@ -49,16 +49,6 @@ O laboratório foi construído em **VMware Workstation**, com as seguintes máqu
 
 ---
 
-## Prints do Laboratório
-
-Confira os prints na pasta `/prints/` para ver:
-
-- Dashboard do Wazuh em funcionamento
-- Alertas gerados pelo agente
-- Logs recebidos e analisados
-
----
-
 ## Observações
 
 - O laboratório foi desenvolvido com foco educacional.
