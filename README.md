@@ -72,7 +72,7 @@ O laboratório foi construído em **VMware Workstation**, com as seguintes máqu
 Este laboratório foi realizado durante o curso:
 
 **Wazuh Expert - Green Club**  
-[https://www.greenclub.com.br](https://www.greenclub.com.br)
+[https://wazuh-expert.greenn.club](https://wazuh-expert.greenn.club/)
 
 ---
 
