@@ -63,7 +63,7 @@ O laboratório foi construído em **VMware Workstation**, com as seguintes máqu
 - [pfSense](https://www.pfsense.org/)
 - [Ubuntu Server](https://ubuntu.com/)
 - [Windows 11](https://www.microsoft.com/)
-- [VMware Workstation](https://www.vmware.com/products/workstation.html)
+- [VMware Workstation](https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion)
 
 ---
 
