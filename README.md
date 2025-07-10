@@ -1,10 +1,17 @@
-# Laboratório Wazuh com pfSense, Ubuntu Server e Windows Agent
+# Wazuh Lab with pfSense, Ubuntu Server, and Windows Agent / Laboratório Wazuh com pfSense, Ubuntu Server e Windows Agent
 
-Este repositório documenta um ambiente de laboratório criado durante o curso **Wazuh Expert** da **Green Club**, com o objetivo de simular uma infraestrutura real de segurança da informação, utilizando ferramentas de código aberto para aprendizado prático em SIEM e monitoramento.
+This repository documents a hands-on lab environment created during the **Wazuh Expert** course by **Green Club**, aiming to simulate a real-world information security infrastructure using open-source tools.
+
+Este repositório documenta um ambiente de laboratório criado durante o curso **Wazuh Expert** da **Green Club**, com o objetivo de simular uma infraestrutura real de segurança da informação utilizando ferramentas de código aberto.
 
 ---
 
-## Objetivos do Projeto
+## 🎯 Project Objectives / Objetivos do Projeto
+
+- Build a functional Wazuh environment for centralized log analysis.
+- Monitor security events across endpoints and network.
+- Simulate a corporate scenario with a firewall, SIEM server, and Windows agent.
+- Practice Wazuh installation, configuration, and alert analysis.
 
 - Criar um ambiente funcional com Wazuh para centralização e análise de logs.
 - Monitorar eventos de segurança em endpoints e rede.
@@ -13,51 +20,65 @@ Este repositório documenta um ambiente de laboratório criado durante o curso *
 
 ---
 
-## Estrutura do Ambiente
+## 🖥️ Lab Environment Structure / Estrutura do Ambiente
+
+The lab was built using **VMware Workstation** and includes the following virtual machines:
 
 O laboratório foi construído em **VMware Workstation**, com as seguintes máquinas virtuais:
 
-| Componente     | Sistema Operacional    | Função                                    |
-|----------------|------------------------|-------------------------------------------|
-| pfSense        | pfSense 2.x            | Firewall e roteamento                     |
-| Wazuh Server   | Ubuntu Server 22.04    | Servidor SIEM e central de gerenciamento  |
-| Wazuh Agent    | Windows 11 Pro         | Endpoint monitorado                       |
+| Component / Componente | Operating System / Sistema Operacional | Role / Função |
+|------------------------|----------------------------------------|---------------|
+| pfSense                | pfSense 2.x                            | Firewall and routing / Firewall e roteamento |
+| Wazuh Server           | Ubuntu Server 22.04                    | SIEM server and management dashboard / Servidor SIEM e central de gerenciamento |
+| Wazuh Agent            | Windows 11 Pro                         | Monitored endpoint / Endpoint monitorado |
 
 ---
 
-## Diagrama da Topologia
+## 🧭 Network Topology Diagram / Diagrama da Topologia
 
+📁 See the `/diagrama/` folder for the full network topology between the VMs.  
 📁 Veja a pasta `/diagrama/` para o esquema de rede entre as VMs.
 
 ---
 
-##  Configurações Importantes
+## ⚙️ Key Configurations / Configurações Importantes
 
 ### 🔸 pfSense
-- Criado para fornecer NAT e controle de tráfego entre as VMs.
-- Regras de firewall configuradas para permitir comunicação entre o agente e o servidor Wazuh.
+- Provides NAT and traffic control between virtual machines.
+- Firewall rules allow communication between agent and server.
+
+- Fornece NAT e controle de tráfego entre as VMs.
+- Regras de firewall permitem comunicação entre o agente e o servidor.
 
 ### 🔸 Wazuh Server (Ubuntu)
+- Wazuh Manager and Dashboard installed and configured.
+- Custom rules tested for agent event detection.
+
 - Instalação do Wazuh Manager e Dashboard.
-- Configuração básica de regras e monitoramento.
-- Regras customizadas testadas para eventos do agente Windows.
+- Regras customizadas testadas para eventos do agente.
 
 ### 🔸 Windows Agent
-- Instalação do Wazuh Agent em **Windows 11 Pro**.
-- Registro e comunicação com o servidor Ubuntu.
+- Installed and registered with Wazuh Server.
+- Local events generated for monitoring validation.
+
+- Instalado e registrado no Wazuh Server.
 - Geração de eventos locais para validação da monitoração.
 
 ---
 
-## Observações
+## 📌 Notes / Observações
 
-- O laboratório foi desenvolvido com foco educacional.
-- Algumas configurações foram simplificadas para fins de demonstração.
-- Ideal para iniciantes em SIEM e profissionais buscando experiência prática com Wazuh.
+- Created for educational purposes.
+- Some configurations were simplified.
+- Ideal for SIEM beginners and practical training.
+
+- Criado com foco educacional.
+- Algumas configurações foram simplificadas.
+- Ideal para iniciantes em SIEM e prática com Wazuh.
 
 ---
 
-## Tecnologias Utilizadas
+## 🧰 Technologies Used / Tecnologias Utilizadas
 
 - [Wazuh](https://wazuh.com/)
 - [pfSense](https://www.pfsense.org/)
@@ -67,15 +88,9 @@ O laboratório foi construído em **VMware Workstation**, com as seguintes máqu
 
 ---
 
-## Curso de Referência
-
-Este laboratório foi realizado durante o curso:
+## 📚 Reference Course / Curso de Referência
 
 **Wazuh Expert - Green Club**  
 [https://wazuh-expert.greenn.club](https://wazuh-expert.greenn.club/)
 
 ---
-
-## 🤝 Conecte-se
-
-📫 Me adicione no [LinkedIn](https://www.linkedin.com/in/juliorodrigop/)
